@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* width: 80%; */
+  align-items: center;
+  font-family: serif;
+  line-height: 1.5;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+}
+
+.full {
+  justify-content: center;
+  display: flex;
+  border: 2px solid black;
+}
+.line-left {
+  height: 1px;
+  width: full;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.line-right {
+  height: 1.5px;
+  width: full;
+  margin-right: 0px;
+  background-color: black;
+}
+
+.profile {
+  background-color: #333f50;
+  display: flex;
+
+  width: 40%;
+  padding-top: 12px;
+  padding-left: 12px;
+  color: white;
+
+  flex-direction: column;
+  .image-area {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+
+    img {
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+  margin-left: 15px;
+     
+    }
+  }
+
+  .contact-area {
+    width: 100%;
+   p{
+    margin-top: 10px;
+   }
+    i {
+      margin-right: 6px;
+    }
+  }
+
+  .skills,
+  .languages,
+  .hobbies {
+    margin-top: 20px;
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,1);
+}
+p{
+    margin: 0;
+}
+
+li {
+ 
+  margin-top: 10px;
+}
+
+h3, h4{
+  margin: 0;
+  /* margin-left: 6px; */
+}
+
+.qualifications {
+  width: 60%;
+
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 20px 0 12px;
+
+  .horizontal-block{
+    height: 3vh;
+    width: 26vw;
+    margin-left: 35vw;
+    background-color: #333f50;
+    position: relative;
+  }
+
+
+  /* .vertical-block{
+    height: 230px;
+    width: 20px;
+    background-color: #333f50;
+    display: inline-block;
+    margin-left: 20px;
+  } */
+  
+  
+.summary p{
+text-align: justify;
+}
+.summary, .projects, .workshop, .education{
+    margin-top: 40px;
+}
+}
+
+
+
+
+
+
+.tribhuwan h4{
+    display: inline-block;
+    margin-right: 20vw;
+   
+  
+}
+.universal h4{
+    display: inline-block;
+    margin-right: 23vw;
+}
