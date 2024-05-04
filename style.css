@@ -16,9 +16,12 @@ h4,
 p {
   margin: 0;
 }
+h3 {
+  margin-left: 6px;
+}
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(188, 187, 187);
 }
 a:hover {
   text-decoration: underline;
@@ -39,6 +42,7 @@ li {
   display: flex;
   width: 100vw;
   border: 2px solid black;
+  overflow-x: hidden;
 }
 
 /* left section */
@@ -46,9 +50,10 @@ li {
   background-color: #333f50;
   display: flex;
 
-  width: 40%;
+  width: 40vw;
   padding-top: 12px;
   padding-left: 12px;
+
   color: white;
 
   flex-direction: column;
@@ -79,27 +84,29 @@ li {
   .languages,
   .hobbies {
     margin-top: 20px;
+    padding-right: 18px;
   }
   .line-left {
     height: 1px;
-    width: full;
+    /* width: 36vw; */
     background-color: white;
-    margin-right: 10px;
+    margin-right: 0px;
   }
 }
 
 /* right section */
 .qualifications {
-  width: 60%;
+  width: 60vw;
 
   justify-content: center;
   flex-direction: column;
-  margin: 0px 20px 0 12px;
+  /* margin: 0px 20px 0 12px; */
+  padding: 0 12px 0 12px;
 
   .horizontal-block {
-    height: 3vh;
+    height: 2.5vh;
     width: 26vw;
-    margin-left: 35vw;
+    margin-left: 33vw;
     background-color: #333f50;
     position: relative;
   }
@@ -120,6 +127,7 @@ li {
   }
   .summary p {
     text-align: justify;
+    padding: 10px 0px 5px 6px;
   }
   .summary,
   .projects,
@@ -152,12 +160,17 @@ li {
   }
   .profile,
   .qualifications {
-    width: 100% !important;
+    width: 100%;
+    overflow-x: hidden;
   }
   .qualifications {
-    padding-right: 15px;
-  }
-  .horizontal-block {
-    display: none;
+    padding-right: 25px;
+
+    /* .summary-content{
+        padding: 5px;
+    } */
+    .horizontal-block {
+      display: none;
+    }
   }
 }
