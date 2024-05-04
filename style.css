@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   /* width: 80%; */
@@ -8,33 +9,39 @@ body {
   font-family: serif;
   line-height: 1.5;
 }
-h1,h2,h3{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 1);
 }
 
-.grid{
-    display: grid;
-    justify-content: center;
+li {
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
 }
 
 .full {
   justify-content: center;
   display: flex;
+  width: 100vw;
   border: 2px solid black;
 }
-.line-left {
-  height: 1px;
-  width: full;
-  background-color: white;
-  margin-right: 10px;
-}
 
-.line-right {
-  height: 1.5px;
-  width: full;
-  margin-right: 0px;
-  background-color: black;
-}
+
 
 .profile {
   background-color: #333f50;
@@ -51,22 +58,20 @@ h1,h2,h3{
     display: grid;
     justify-content: center;
     align-items: center;
-   
 
     img {
       height: 90%;
       width: 90%;
       border-radius: 50%;
-  /* margin-left: 15px; */
-     
+      /* margin-left: 15px; */
     }
   }
 
   .contact-area {
     width: 100%;
-   p{
-    margin-top: 10px;
-   }
+    p {
+      margin-top: 10px;
+    }
     i {
       margin-right: 6px;
     }
@@ -77,27 +82,12 @@ h1,h2,h3{
   .hobbies {
     margin-top: 20px;
   }
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-a:hover{
-    text-decoration: underline;
-    color: rgba(0,0,0,1);
-}
-p{
-    margin: 0;
-}
-
-li {
- 
-  margin-top: 10px;
-}
-
-h3, h4{
-  margin: 0;
-  /* margin-left: 6px; */
+  .line-left {
+    height: 1px;
+    width: full;
+    background-color: white;
+    margin-right: 10px;
+  }
 }
 
 .qualifications {
@@ -107,14 +97,13 @@ h3, h4{
   flex-direction: column;
   margin: 0px 20px 0 12px;
 
-  .horizontal-block{
+  .horizontal-block {
     height: 3vh;
     width: 26vw;
     margin-left: 35vw;
     background-color: #333f50;
     position: relative;
   }
-
 
   /* .vertical-block{
     height: 230px;
@@ -123,28 +112,51 @@ h3, h4{
     display: inline-block;
     margin-left: 20px;
   } */
-  
-  
-.summary p{
-text-align: justify;
-}
-.summary, .projects, .workshop, .education{
+
+  .line-right {
+    height: 1.5px;
+    width: full;
+    margin-right: 0px;
+    background-color: black;
+  }
+  .summary p {
+    text-align: justify;
+  }
+  .summary,
+  .projects,
+  .workshop,
+  .education {
     margin-top: 40px;
+  }
+
+
+.tribhuwan h4 {
+  display: inline-block;
+  margin-right: 20vw;
+}
+.universal h4 {
+  display: inline-block;
+  margin-right: 23vw;
 }
 }
 
-
-
-
-
-
-.tribhuwan h4{
-    display: inline-block;
-    margin-right: 20vw;
-   
-  
-}
-.universal h4{
-    display: inline-block;
-    margin-right: 23vw;
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+  .full {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .profile,
+  .qualifications {
+    width: 100% !important;
+  }
+  .qualifications {
+    padding-right: 15px;
+  }
+  .horizontal-block {
+    display: none;
+  }
 }
