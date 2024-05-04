@@ -41,8 +41,7 @@ li {
   border: 2px solid black;
 }
 
-
-
+/* left section */
 .profile {
   background-color: #333f50;
   display: flex;
@@ -54,7 +53,6 @@ li {
 
   flex-direction: column;
   .image-area {
-    
     display: grid;
     justify-content: center;
     align-items: center;
@@ -90,6 +88,7 @@ li {
   }
 }
 
+/* right section */
 .qualifications {
   width: 60%;
 
@@ -129,17 +128,17 @@ li {
     margin-top: 40px;
   }
 
+  .tribhuwan h4 {
+    display: inline-block;
+    margin-right: 20vw;
+  }
+  .universal h4 {
+    display: inline-block;
+    margin-right: 23vw;
+  }
+}
 
-.tribhuwan h4 {
-  display: inline-block;
-  margin-right: 20vw;
-}
-.universal h4 {
-  display: inline-block;
-  margin-right: 23vw;
-}
-}
-
+/* for the screen below 700px(below tablet) */
 @media screen and (max-width: 700px) {
   body {
     width: 100%;
@@ -161,5 +160,4 @@ li {
   .horizontal-block {
     display: none;
   }
-  .image
 }
