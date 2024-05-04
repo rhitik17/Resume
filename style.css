@@ -54,16 +54,16 @@ li {
 
   flex-direction: column;
   .image-area {
-    width: 100%;
+    
     display: grid;
     justify-content: center;
     align-items: center;
 
     img {
-      height: 90%;
-      width: 90%;
+      height: 170px;
+      width: 170px;
       border-radius: 50%;
-      /* margin-left: 15px; */
+      margin-left: 15px;
     }
   }
 
@@ -161,4 +161,5 @@ li {
   .horizontal-block {
     display: none;
   }
+  .image
 }
