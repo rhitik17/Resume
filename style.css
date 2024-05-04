@@ -148,6 +148,8 @@ li {
     display: flex;
     flex-direction: column;
     border: none;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .profile,
   .qualifications {
