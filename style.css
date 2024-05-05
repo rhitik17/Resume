@@ -158,6 +158,10 @@ li {
     overflow-x: hidden;
     overflow-y: auto;
   }
+  .profile .image-area img{
+    height: 40vh;
+    width: 45vw;
+  }
   .profile,
   .qualifications {
     width: 100%;
