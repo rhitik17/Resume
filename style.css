@@ -9,7 +9,7 @@ body {
   align-items: center;
   font-family: serif;
   line-height: 1.5;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 h1,
 h2,
