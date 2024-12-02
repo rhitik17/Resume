@@ -136,6 +136,12 @@ li {
     margin-top: 40px;
   }
 
+  .projects a {
+    text-decoration: underline;
+    color: blue;
+    
+  }
+
   .tribhuwan h4 {
     display: inline-block;
     margin-right: 20vw;
